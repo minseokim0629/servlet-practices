@@ -13,9 +13,13 @@ public class HelloServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String id = request.getParameter("id");
+		String no = request.getParameter("no");
+		
+		System.out.println(id+":"+no);
 		response.setContentType("text/html; charset=utf-8"); // 브라우저한테 헤더 마지막 부분을 보내주게 되고
 		PrintWriter out = response.getWriter(); // 빈 개행을 출력한다
-		out.print("<h1>Hello World</h1>");
+		out.print("<h1>Hello " +id+ "</h1>");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
