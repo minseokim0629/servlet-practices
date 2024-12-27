@@ -8,5 +8,6 @@
   	<module>helloweb</module>
   	<module>emaillist01</module>
   	<module>guestbook02</module>
-  </modules>
+  	<module>jstlel</module>
+  </modules>	
 </project>
